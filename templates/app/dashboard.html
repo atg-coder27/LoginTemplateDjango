@@ -23,7 +23,8 @@
 	{% endif %}
 
 	<h1 class="mt-5 text-center">Welcome {{ request.user }}</h1>
-	<p class="text-left mt-5">Bio: {{ user.profile.bio }}</p>
-	<p class="text-left">Joined: {{ user.profile.timestamp }}</p>
+	<h1 class="mt-5 text-center">Here Place your graph</h1>
+	{% comment %} <p class="text-left mt-5">Bio: {{ user.profile.bio }}</p>
+	<p class="text-left">Joined: {{ user.profile.timestamp }}</p> {% endcomment %}
 
 {% endblock content %}

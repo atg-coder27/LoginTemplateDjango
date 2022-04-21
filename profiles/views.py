@@ -6,7 +6,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from django.utils.encoding import force_bytes, force_text
+from django.utils.encoding import force_bytes
 from django.contrib.auth import get_user_model
 
 from .forms import SignUpForm
@@ -15,6 +15,7 @@ from .utils import get_location_from_ip
 from .tokens import account_activation_token
 
 User = get_user_model()
+
 
 def signup(request):
     if request.method == 'POST':
